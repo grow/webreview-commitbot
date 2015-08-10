@@ -1,0 +1,52 @@
+*.py[cod]
+scripts/deploy_*
+ssh
+.DS_Store
+
+testing/*.zip
+testing/*.json
+config/*.json
+*.der
+*.p12
+*.pem
+
+bower_components
+env
+htmlcov
+jetway.yaml
+jetway.*prod.yaml
+lib
+node_modules
+
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject

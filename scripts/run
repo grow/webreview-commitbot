@@ -1,0 +1,3 @@
+boot2docker up
+$(boot2docker shellinit)
+gcloud preview app run ./app.yaml

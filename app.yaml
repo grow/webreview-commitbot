@@ -1,0 +1,21 @@
+module: default
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+vm: true
+resources:
+  cpu: .5
+  memory_gb: 1.3
+manual_scaling:
+  instances: 1
+
+handlers:
+
+- url: /_api/.*
+  script: app.main.api_app
+  secure: always
+
+- url: .*
+  script: app.main.app
+  login: admin
