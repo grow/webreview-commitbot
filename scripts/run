@@ -1,3 +1,5 @@
+#!/bin/bash
+
 boot2docker up
 $(boot2docker shellinit)
-gcloud preview app run ./app.yaml
+gcloud preview --project googwebreview-dev app run ./app.yaml

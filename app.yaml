@@ -17,5 +17,5 @@ handlers:
   secure: always
 
 - url: .*
-  script: app.main.app
+  script: app.main.test_app
   login: admin

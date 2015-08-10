@@ -2,15 +2,6 @@ import git
 import md5
 import os
 
-
-class Error(Exception):
-  pass
-
-
-class ConflictError(Error):
-  pass
-
-
 def get_work_dir(url):
   m = md5.new()
   m.update(url)
