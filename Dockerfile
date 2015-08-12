@@ -1,9 +1,8 @@
-FROM gcr.io/google_appengine/python-compat
+FROM grow/baseimage-managed-vms:0.0.53
+MAINTAINER Grow SDK Authors <hello@grow.io>
 
-RUN apt-get update
-RUN apt-get install -y --no-install-recommends git python python-pip wget
-
-# RUN pip install -U pip
-RUN pip install -r requirements.txt
+ADD requirements.txt /app/requirements.txt
+RUN pip install -r /app/requirements.txt
 
 ADD . /app
+WORKDIR /app
