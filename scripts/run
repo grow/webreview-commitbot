@@ -2,4 +2,4 @@
 
 boot2docker up
 $(boot2docker shellinit)
-gcloud preview --project googwebreview-dev app run ./app.yaml
+GAE_LOCAL_VM_RUNTIME=0 gcloud preview --project googwebreview-dev app run ./app.yaml
